@@ -4,7 +4,7 @@ pipeline {
     ENV = "dev"
     // read config credentials dockerhub
     DOCKER_REGISTRY= "registry.hub.docker.com"
-    DOCKER_REGISTRY_CREDENTIALS = credentials('dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('dockerhub')
     REPO = "nodejs-project-demo"
     TAG = sh(returnStdout: true, script: "git rev-parse -short=10 HEAD | tail -n +2").trim()
   }
