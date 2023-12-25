@@ -1,5 +1,6 @@
 pipeline {
   agent any
+  tools {nodejs "NodeJS20"} 
   environment {
     ENV = "dev"
     // read config credentials dockerhub
