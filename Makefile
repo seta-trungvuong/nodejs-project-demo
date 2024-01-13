@@ -13,5 +13,5 @@ run-docker:
 # gcloud auth configure-docker \
     gcr.io
 push-gcr:
-	docker tag $(BINARY_NAME) gcr.io/woven-operative-403115/$(BINARY_NAME):$(TAG_DEV)
-	docker push gcr.io/woven-operative-403115/$(BINARY_NAME):$(TAG_DEV)
+	docker tag $(BINARY_NAME) asia-southeast1-docker.pkg.dev/vertical-realm-410004/trung-repo/$(BINARY_NAME):$(TAG_DEV)
+	docker push asia-southeast1-docker.pkg.dev/vertical-realm-410004/trung-repo/$(BINARY_NAME):$(TAG_DEV)

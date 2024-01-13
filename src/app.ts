@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use("/users", userRoutes);
 
 app.use("/", (req: Request, res: Response, next: NextFunction): void => {
-  res.json({ message: "Allo! Catch-all route." });
+  res.json({ message: "Hello. This is a NodeJs Project" });
 });
 
 export default app;
